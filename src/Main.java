@@ -14,11 +14,7 @@ public class Main {
              Scanner scanner = new Scanner(new FileInputStream("src/table.txt"))) {
 
 
-            writer.write("Рост урожая в регионе  " + region);
-            writer.write("\n");
-            writer.write("Более чем на 6 %.По городам и годам");
-            writer.write("\n");
-
+            writer.write("Рост урожая в регионе  " + region+"\n"+"Более чем на 6 %.По городам и годам "+"\n");
 
             int i = 0;
 
@@ -42,10 +38,8 @@ public class Main {
                                 String s1 = " Год ;" + arrYear[f] + ";" + arrYear[f + 1];
                                 String s2 = numOperation.townGet(volumeInfo[0]) + "  " + arrVolume[f] + " ; " + arrVolume[f + 1];
 
-                                writer.write(s1);
-                                writer.write("\n");
-                                writer.write(s2);
-                                writer.write("\n");
+                                writer.write(s1 + "\n" + s2 + "\n");
+
                                 writer.flush();
 
                             }

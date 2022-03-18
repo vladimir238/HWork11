@@ -25,7 +25,7 @@ public class NumOperation {
         try {
             if ((((num2 - num1) / num1) * 100) >= 6) return true;
         } catch (Exception e) {
-            System.out.println("Деление на 0 " + e.getMessage());
+            System.out.println( e.getMessage());
             return false;
         }
 
