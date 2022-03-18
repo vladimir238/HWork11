@@ -11,7 +11,7 @@ public class Main {
         int[] arrYear = new int[6];
         String region = "Центральный";
         try (FileWriter writer = new FileWriter("src/output.txt", false);
-             Scanner scanner = new Scanner(new FileInputStream("src/table1.txt"))) {
+             Scanner scanner = new Scanner(new FileInputStream("src/table.txt"))) {
 
 
             writer.write("Рост урожая в регионе  " + region);
