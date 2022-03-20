@@ -4,8 +4,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Программа производит чтение данных из файла table.txt .");
-        System.out.println("Выводит результаты в файл output.txt ");
+        System.out.println("Программа производит чтение данных из файла table.txt .\nВыводит результаты в файл output.txt ");
         NumOperation numOperation = new NumOperation();
 
         int[] arrYear = new int[6];
@@ -14,7 +13,7 @@ public class Main {
              Scanner scanner = new Scanner(new FileInputStream("src/table.txt"))) {
 
 
-            writer.write("Рост урожая в регионе  " + region+"\n"+"Более чем на 6 %.По городам и годам "+"\n");
+            writer.write("Рост урожая в регионе  " + region+"\nБолее чем на 6 %.По городам и годам \n");
 
             int i = 0;
 
